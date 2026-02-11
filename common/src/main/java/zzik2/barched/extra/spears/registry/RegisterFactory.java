@@ -36,7 +36,6 @@ public class RegisterFactory {
     public static void init() {
         for (CompatMods mods : CompatMods.values()) {
             ICompatMod compatMod = mods.getCompatMod();
-            BarchedES.LOGGER.info("Trying hook mod: " + compatMod.getModID());
             boolean isModLoaded = compatMod.isModLoaded();
             if (!isModLoaded) {
                 BarchedES.LOGGER.warn("Mod not found. Ignored: " + compatMod.getModID());
