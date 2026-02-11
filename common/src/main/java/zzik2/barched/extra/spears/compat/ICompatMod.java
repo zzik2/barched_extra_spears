@@ -12,8 +12,14 @@ public interface ICompatMod {
 
     String getModID();
 
+    /**
+     * Decide which Material to register as a Spear
+     */
     List<MaterialData<Tier, String, SpearData>> getMaterials();
 
+    /**
+     * Decide which creative tab the item will be registered in
+     */
     CreativeModeTab getCreativeTab();
 
     default boolean isModLoaded() {
