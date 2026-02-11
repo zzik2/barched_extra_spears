@@ -64,7 +64,7 @@ public class RegisterFactory {
                 }
 
                 ITEMS.register();
-                BarchedES.LOGGER.info("Successfully registered Spears. Found material count: " + materialCount);
+                BarchedES.LOGGER.info("Successfully registered Spears to "+ compatMod.getModID() + ". Found material count: " + materialCount);
             }
         }
     }
