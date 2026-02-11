@@ -2,7 +2,6 @@ package zzik2.barched.extra.spears.registry;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
-import it.unimi.dsi.fastutil.Pair;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
@@ -18,13 +17,19 @@ import zzik2.barched.extra.spears.objects.items.SpearData;
 import zzik2.barched.minecraft.world.item.SpearItem;
 import zzik2.zreflex.enumeration.ZEnumTool;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.function.Supplier;
 
 public class RegisterFactory {
 
-    public static final Map<String, RegistrySupplier<Item>> REGISTERED_SPEARS = new HashMap<>();
+    // MOD_ID | List<RegistrySupplier<Item>>
+    public static final Map<String, List<RegistrySupplier<Item>>> REGISTERED_SPEARS = new HashMap<>();
+
+    // RegistrySupplier<Item> | materialName
+    public static final Map<RegistrySupplier<Item>, String> REGISTRY_SUPPLIER_TO_MATERIAL = new HashMap<>();
 
     private RegisterFactory() {}
 
@@ -42,9 +47,9 @@ public class RegisterFactory {
                 int materialCount = 0;
                 for (MaterialData<Tier, String, SpearData> materialData : compatMod.getMaterials()) {
                     materialCount++;
-                    Tier material = materialData.first();
-                    String materialName = materialData.second();
-                    SpearData spearData = materialData.third();
+                    Tier material = materialData.material();
+                    String materialName = materialData.materialName();
+                    SpearData spearData = materialData.spearData();
                     Tiers TIER = ZEnumTool.addConstant(
                             Tiers.class,
                             compatMod.getModID().toUpperCase() + "$" + materialName.toUpperCase(),
@@ -54,7 +59,8 @@ public class RegisterFactory {
 
                     RegistrySupplier<Item> item = ITEMS.register(materialName + "_spear", () -> new SpearItem(material, ((Item$PropertiesBridge) new Item.Properties()).spear(TIER, spearData.swingSeconds(), spearData.kineticDamageMultiplier(), spearData.delaySeconds(), spearData.damageCondDurationSeconds(), spearData.damageCondMinSpeed(), spearData.knockbackCondDurationSeconds(), spearData.knockbackCondMinSpeed(), spearData.dismountCondDurationSeconds(), spearData.dismountCondMinRelativeSpeed())));
 
-                    REGISTERED_SPEARS.put(compatMod.getModID(), item);
+                    REGISTERED_SPEARS.computeIfAbsent(compatMod.getModID(), k -> new ArrayList<>()).add(item);
+                    REGISTRY_SUPPLIER_TO_MATERIAL.put(item, materialName);
                 }
 
                 ITEMS.register();
