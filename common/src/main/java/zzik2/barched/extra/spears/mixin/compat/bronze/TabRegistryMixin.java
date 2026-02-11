@@ -17,7 +17,7 @@ import zzik2.barched.extra.spears.registry.RegisterFactory;
 public class TabRegistryMixin {
 
     @Dynamic
-    @Inject(method = "lambda$static$1", at = @At(value = "FIELD", target = "Lcom/khazoda/bronze/registry/MainRegistry;BRONZE_SWORD:Ljava/util/function/Supplier;", opcode = Opcodes.GETSTATIC, shift = At.Shift.AFTER))
+    @Inject(method = "lambda$static$1", at = @At(value = "FIELD", target = "Lcom/khazoda/bronze/registry/MainRegistry;BRONZE_SWORD:Ljava/util/function/Supplier;", opcode = Opcodes.GETSTATIC, shift = At.Shift.AFTER), require = 0)
     private static void barchedES$accept(CreativeModeTab.ItemDisplayParameters parameters, CreativeModeTab.Output output, CallbackInfo ci) {
         for (RegistrySupplier<Item> item : RegisterFactory.REGISTERED_SPEARS.get(CompatMods.BRONZE.getCompatMod().getModID())) {
             output.accept(item.get());
