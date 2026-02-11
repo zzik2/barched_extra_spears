@@ -36,7 +36,70 @@ The bronze spear sits between iron and diamond in terms of balance, and is place
 
 </details>
 
-> 💡 **More mod support coming soon!** Feel free to open an issue if there's a mod you'd like to see supported 🙌
+<details>
+<summary>🟡 <b>Paradise Lost</b> — 🚧 Work in Progress</summary>
+
+### Paradise Lost
+
+[Paradise Lost](https://modrinth.com/mod/paradise-lost) support is currently in development. Stay tuned!
+
+</details>
+
+<details>
+<summary>🔵 <b>Progression Reborn</b> — 🚧 Work in Progress</summary>
+
+### Progression Reborn
+
+[Progression Reborn](https://modrinth.com/mod/progression-reborn) support is currently in development. Stay tuned!
+
+</details>
+
+<details>
+<summary>🐉 <b>Dragon Loot</b> — 🚧 Work in Progress</summary>
+
+### Dragon Loot
+
+[Dragon Loot](https://modrinth.com/mod/dragonloot) support is currently in development. Stay tuned!
+
+</details>
+
+<details>
+<summary>☁️ <b>Aether</b> — 🚧 Work in Progress</summary>
+
+### Aether
+
+[Aether](https://modrinth.com/mod/aether) support is currently in development. Stay tuned!
+
+</details>
+
+<details>
+<summary>➕ <b>Additional Additions</b> — 🚧 Work in Progress</summary>
+
+### Additional Additions
+
+[Additional Additions](https://modrinth.com/mod/addadd) support is currently in development. Stay tuned!
+
+</details>
+
+<details>
+<summary>🕳️ <b>Deeper and Darker</b> — 🚧 Work in Progress</summary>
+
+### Deeper and Darker
+
+[Deeper and Darker](https://modrinth.com/mod/deeperdarker) support is currently in development. Stay tuned!
+
+</details>
+
+<details>
+<summary>🟣 <b>Enderite</b> — 🚧 Work in Progress</summary>
+
+### Enderite
+
+[Enderite](https://modrinth.com/mod/enderite-mod) support is currently in development. Stay tuned!
+
+</details>
+
+> 💡 **Want to see another mod supported?** Feel free to open an issue! 🙌
 
 ## ⚙️ Config
 
