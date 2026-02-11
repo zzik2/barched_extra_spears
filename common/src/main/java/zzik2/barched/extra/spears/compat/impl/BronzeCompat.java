@@ -18,7 +18,7 @@ public class BronzeCompat implements ICompatMod {
     }
 
     @Override
-    public List<MaterialData<Tier, String, SpearData>> getMaterials() {
+    public List<MaterialData<Tier, String, SpearData>> getDefaultMaterials() {
         return List.of(
                 new MaterialData<>(BronzeToolMaterial.INSTANCE, "bronze", new SpearData(
                         1.00F,

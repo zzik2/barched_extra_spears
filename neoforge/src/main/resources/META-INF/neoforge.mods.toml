@@ -35,6 +35,13 @@ ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.barched_extra_spears]]
+modId = "cloth_config"
+type = "required"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.barched_extra_spears]]
 modId = "barched"
 type = "required"
 versionRange = "*"
