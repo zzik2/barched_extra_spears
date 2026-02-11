@@ -1,6 +1,5 @@
 package zzik2.barched.extra.spears;
 
-import dev.architectury.event.events.common.LifecycleEvent;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.resources.ResourceLocation;
@@ -17,19 +16,14 @@ public class BarchedESClient {
     public static final Map<Item, ModelResourceLocation> SPEAR_IN_HAND_MODEL_MAP = new HashMap<>();
 
     public static void init() {
-        LifecycleEvent.SERVER_STARTED.register(server -> {
-            BarchedES.LOGGER.info("Server Started! Trying register Spear models...");
-            for (String nameSpace : RegisterFactory.REGISTERED_SPEARS.keySet()) {
-                for (RegistrySupplier<Item> item : RegisterFactory.REGISTERED_SPEARS.get(nameSpace)) {
-                    Objects.requireNonNull(item.get());
-                    String materialName = RegisterFactory.REGISTRY_SUPPLIER_TO_MATERIAL.get(item);
-                    SPEAR_MODEL_MAP.put(item.get(), barchedES$spear(nameSpace, materialName));
-                    SPEAR_IN_HAND_MODEL_MAP.put(item.get(), barchedES$spear_in_hand(nameSpace, materialName));
-                }
+        for (String nameSpace : RegisterFactory.REGISTERED_SPEARS.keySet()) {
+            for (RegistrySupplier<Item> item : RegisterFactory.REGISTERED_SPEARS.get(nameSpace)) {
+                Objects.requireNonNull(item.get());
+                String materialName = RegisterFactory.REGISTRY_SUPPLIER_TO_MATERIAL.get(item);
+                SPEAR_MODEL_MAP.put(item.get(), barchedES$spear(nameSpace, materialName));
+                SPEAR_IN_HAND_MODEL_MAP.put(item.get(), barchedES$spear_in_hand(nameSpace, materialName));
             }
-            BarchedES.LOGGER.info("Server Started! Trying register Spear models... Done!");
-        });
-        BarchedES.LOGGER.info("Life Cycle Event Registered!");
+        }
     }
 
     public static ModelResourceLocation barchedES$spear(String nameSpace, String materialName) {
