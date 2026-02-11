@@ -26,20 +26,20 @@ public final class SpearDataConfigManager {
     private SpearDataConfigManager() {
     }
 
-    public static void init() {
+    public static SpearData loadOrCreate(String modId, String materialName, SpearData defaults) {
+        String cacheKey = modId + "/" + materialName;
+        if (LOADED_CONFIGS.containsKey(cacheKey)) {
+            return LOADED_CONFIGS.get(cacheKey);
+        }
+
+        Path modDir = CONFIG_DIR.resolve(modId);
         try {
-            Files.createDirectories(CONFIG_DIR);
+            Files.createDirectories(modDir);
         } catch (IOException e) {
-            BarchedES.LOGGER.error("Failed to create config directory: {}", CONFIG_DIR, e);
-        }
-    }
-
-    public static SpearData loadOrCreate(String materialName, SpearData defaults) {
-        if (LOADED_CONFIGS.containsKey(materialName)) {
-            return LOADED_CONFIGS.get(materialName);
+            BarchedES.LOGGER.error("Failed to create config directory: {}", modDir, e);
         }
 
-        Path configFile = CONFIG_DIR.resolve(materialName + ".json");
+        Path configFile = modDir.resolve(materialName + ".json");
         SpearData result;
 
         if (Files.exists(configFile)) {
@@ -53,7 +53,7 @@ public final class SpearDataConfigManager {
             result = defaults;
         }
 
-        LOADED_CONFIGS.put(materialName, result);
+        LOADED_CONFIGS.put(cacheKey, result);
         return result;
     }
 

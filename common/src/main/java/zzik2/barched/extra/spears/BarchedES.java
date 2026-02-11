@@ -2,7 +2,6 @@ package zzik2.barched.extra.spears;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import zzik2.barched.extra.spears.config.SpearDataConfigManager;
 import zzik2.barched.extra.spears.registry.RegisterFactory;
 
 public final class BarchedES {
@@ -11,7 +10,6 @@ public final class BarchedES {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public static void init() {
-        SpearDataConfigManager.init();
         RegisterFactory.init();
     }
 }

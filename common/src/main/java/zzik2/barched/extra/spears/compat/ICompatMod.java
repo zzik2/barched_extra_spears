@@ -27,7 +27,7 @@ public interface ICompatMod {
         List<MaterialData<Tier, String, SpearData>> defaults = getDefaultMaterials();
         List<MaterialData<Tier, String, SpearData>> result = new ArrayList<>();
         for (MaterialData<Tier, String, SpearData> data : defaults) {
-            SpearData configuredData = SpearDataConfigManager.loadOrCreate(data.materialName(), data.spearData());
+            SpearData configuredData = SpearDataConfigManager.loadOrCreate(getModID(), data.materialName(), data.spearData());
             result.add(new MaterialData<>(data.material(), data.materialName(), configuredData));
         }
         return result;
