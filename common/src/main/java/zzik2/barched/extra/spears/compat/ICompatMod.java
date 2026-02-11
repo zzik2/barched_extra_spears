@@ -14,6 +14,7 @@ public interface ICompatMod {
 
     /**
      * Decide which Material to register as a Spear
+     * Material | Material Name | Spear Data
      */
     List<MaterialData<Tier, String, SpearData>> getMaterials();
 
