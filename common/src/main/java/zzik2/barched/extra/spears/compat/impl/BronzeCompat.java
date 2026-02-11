@@ -1,8 +1,6 @@
 package zzik2.barched.extra.spears.compat.impl;
 
 import com.khazoda.bronze.material.BronzeToolMaterial;
-import com.khazoda.bronze.registry.TabRegistry;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Tier;
 import zzik2.barched.extra.spears.compat.ICompatMod;
 import zzik2.barched.extra.spears.objects.MaterialData;
@@ -32,10 +30,5 @@ public class BronzeCompat implements ICompatMod {
                         4.6F
                 ))
         );
-    }
-
-    @Override
-    public CreativeModeTab getCreativeTab() {
-        return TabRegistry.BRONZE_TAB.get();
     }
 }

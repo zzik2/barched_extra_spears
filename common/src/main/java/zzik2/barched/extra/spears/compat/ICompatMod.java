@@ -33,11 +33,6 @@ public interface ICompatMod {
         return result;
     }
 
-    /**
-     * Decide which creative tab the item will be registered in
-     */
-    CreativeModeTab getCreativeTab();
-
     default boolean isModLoaded() {
         return Platform.isModLoaded(getModID());
     }
