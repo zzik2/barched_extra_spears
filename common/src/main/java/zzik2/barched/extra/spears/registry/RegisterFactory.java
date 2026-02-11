@@ -24,7 +24,7 @@ import java.util.function.Supplier;
 
 public class RegisterFactory {
 
-    public static final Map<String, Item> REGISTERED_SPEARS = new HashMap<>();
+    public static final Map<String, RegistrySupplier<Item>> REGISTERED_SPEARS = new HashMap<>();
 
     private RegisterFactory() {}
 
@@ -54,7 +54,7 @@ public class RegisterFactory {
 
                     RegistrySupplier<Item> item = ITEMS.register(materialName + "_spear", () -> new SpearItem(material, ((Item$PropertiesBridge) new Item.Properties()).spear(TIER, spearData.swingSeconds(), spearData.kineticDamageMultiplier(), spearData.delaySeconds(), spearData.damageCondDurationSeconds(), spearData.damageCondMinSpeed(), spearData.knockbackCondDurationSeconds(), spearData.knockbackCondMinSpeed(), spearData.dismountCondDurationSeconds(), spearData.dismountCondMinRelativeSpeed())));
 
-                    REGISTERED_SPEARS.put(compatMod.getModID(), item.get());
+                    REGISTERED_SPEARS.put(compatMod.getModID(), item);
                 }
 
                 ITEMS.register();
