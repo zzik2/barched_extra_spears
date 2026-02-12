@@ -34,18 +34,21 @@ When **Bronze** is installed, a bronze spear is automatically added!
 **Added Items:**
 - 🗡️ Bronze Spear
 
-The bronze spear sits between iron and diamond in terms of balance, and is placed in Bronze's creative tab.
-
 </details>
 
 <details>
-<summary>🟡 <b>Paradise Lost</b> — 🚧 Work in Progress</summary>
+<summary>🟡 <b>Paradise Lost</b></summary>
 
 ### Paradise Lost
 
 [Modrinth](https://modrinth.com/mod/paradise-lost) | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/paradise-lost)
 
-**Paradise Lost** support is currently in development. Stay tuned!
+When **Paradise Lost** is installed, 3 spears is automatically added!
+
+**Added Items:**
+- 🗡️ Olvite Spear
+- 🗡️ Surtrum Spear
+- 🗡️ Glazed Gold Spear
 
 </details>
 
