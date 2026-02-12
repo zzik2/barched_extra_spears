@@ -42,6 +42,7 @@ dependencies {
 
     // External Mods
     modImplementation("maven.modrinth:bronze:${project.bronze_fabric_version}")
+    implementation("maven.modrinth:paradise-lost:${project.paradise_lost_fabric_version}")
 }
 
 processResources {
