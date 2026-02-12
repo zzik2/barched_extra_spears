@@ -16,9 +16,9 @@ Just install the mod, and spears will be registered whenever a supported mod is 
 
 | Mod | Required |
 |-----|:--------:|
-| [Barched](https://modrinth.com/mod/barched) | ✅ Yes |
-| [Cloth Config](https://modrinth.com/mod/cloth-config) | ✅ Yes |
-| [Architectury API](https://modrinth.com/mod/architectury-api) | ✅ Yes |
+| **Barched** <br> [Modrinth](https://modrinth.com/mod/barched) \| [CurseForge](https://www.curseforge.com/minecraft/mc-mods/barched) | ✅ Yes |
+| **Cloth Config** <br> [Modrinth](https://modrinth.com/mod/cloth-config) \| [CurseForge](https://www.curseforge.com/minecraft/mc-mods/cloth-config) | ✅ Yes |
+| **Architectury API** <br> [Modrinth](https://modrinth.com/mod/architectury-api) \| [CurseForge](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | ✅ Yes |
 
 ## 🤝 Supported Mods
 
@@ -27,7 +27,9 @@ Just install the mod, and spears will be registered whenever a supported mod is 
 
 ### Bronze
 
-When [Bronze](https://modrinth.com/mod/bronze) is installed, a bronze spear is automatically added!
+[Modrinth](https://modrinth.com/mod/bronze) | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/bronze)
+
+When **Bronze** is installed, a bronze spear is automatically added!
 
 **Added Items:**
 - 🗡️ Bronze Spear
@@ -41,7 +43,9 @@ The bronze spear sits between iron and diamond in terms of balance, and is place
 
 ### Paradise Lost
 
-[Paradise Lost](https://modrinth.com/mod/paradise-lost) support is currently in development. Stay tuned!
+[Modrinth](https://modrinth.com/mod/paradise-lost) | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/paradise-lost)
+
+**Paradise Lost** support is currently in development. Stay tuned!
 
 </details>
 
@@ -50,7 +54,9 @@ The bronze spear sits between iron and diamond in terms of balance, and is place
 
 ### Progression Reborn
 
-[Progression Reborn](https://modrinth.com/mod/progression-reborn) support is currently in development. Stay tuned!
+[Modrinth](https://modrinth.com/mod/progression-reborn) | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/progression-reborn)
+
+**Progression Reborn** support is currently in development. Stay tuned!
 
 </details>
 
@@ -59,7 +65,9 @@ The bronze spear sits between iron and diamond in terms of balance, and is place
 
 ### Dragon Loot
 
-[Dragon Loot](https://modrinth.com/mod/dragonloot) support is currently in development. Stay tuned!
+[Modrinth](https://modrinth.com/mod/dragonloot) | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/dragonloot)
+
+**Dragon Loot** support is currently in development. Stay tuned!
 
 </details>
 
@@ -68,7 +76,9 @@ The bronze spear sits between iron and diamond in terms of balance, and is place
 
 ### Aether
 
-[Aether](https://modrinth.com/mod/aether) support is currently in development. Stay tuned!
+[Modrinth](https://modrinth.com/mod/aether) | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/aether)
+
+**Aether** support is currently in development. Stay tuned!
 
 </details>
 
@@ -77,7 +87,9 @@ The bronze spear sits between iron and diamond in terms of balance, and is place
 
 ### Additional Additions
 
-[Additional Additions](https://modrinth.com/mod/addadd) support is currently in development. Stay tuned!
+[Modrinth](https://modrinth.com/mod/addadd) | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/additional-additions)
+
+**Additional Additions** support is currently in development. Stay tuned!
 
 </details>
 
@@ -86,7 +98,9 @@ The bronze spear sits between iron and diamond in terms of balance, and is place
 
 ### Deeper and Darker
 
-[Deeper and Darker](https://modrinth.com/mod/deeperdarker) support is currently in development. Stay tuned!
+[Modrinth](https://modrinth.com/mod/deeperdarker) | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/deeper-and-darker)
+
+**Deeper and Darker** support is currently in development. Stay tuned!
 
 </details>
 
@@ -95,7 +109,9 @@ The bronze spear sits between iron and diamond in terms of balance, and is place
 
 ### Enderite
 
-[Enderite](https://modrinth.com/mod/enderite-mod) support is currently in development. Stay tuned!
+[Modrinth](https://modrinth.com/mod/enderite-mod) | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/enderite-mod)
+
+**Enderite** support is currently in development. Stay tuned!
 
 </details>
 
