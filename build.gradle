@@ -33,6 +33,24 @@ subprojects {
             name = "Modrinth"
             url = "https://api.modrinth.com/maven"
         }
+        maven {
+            name = "Ladysnake Mods"
+            url = uri("https://maven.ladysnake.org/releases")
+        }
+        maven {
+            name = "Kyrptonaught"
+            url = uri("https://maven.kyrptonaught.dev/")
+        }
+        maven {
+            name = "Sherds API"
+            url = uri("https://dl.cloudsmith.io/public/thomasglasser/sherdsapi/maven/")
+        }
+        maven {
+            name = "TommyLib"
+            url = uri("https://dl.cloudsmith.io/public/thomasglasser/tommylib/maven/")
+        }
+        mavenCentral()
+        mavenLocal()
     }
 
     dependencies {

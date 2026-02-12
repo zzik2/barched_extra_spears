@@ -1,10 +1,13 @@
 package zzik2.barched.extra.spears.compat;
 
 import zzik2.barched.extra.spears.compat.impl.BronzeCompat;
+import zzik2.barched.extra.spears.compat.impl.ParadiseLostCompat;
 
 public enum CompatMods {
 
-    BRONZE(new BronzeCompat());
+    BRONZE(new BronzeCompat()),
+    PARADISE_LOST(new ParadiseLostCompat())
+    ;
 
     private final ICompatMod compatMod;
 

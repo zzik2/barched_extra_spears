@@ -57,5 +57,12 @@ ordering = "AFTER"
 side = "BOTH"
 
 
+[[dependencies.barched_extra_spears]]
+modId = "paradise_lost"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
 [[mixins]]
 config = "barched_extra_spears.mixins.json"

@@ -4,6 +4,7 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
@@ -65,6 +66,12 @@ public class RegisterFactory {
                 ITEMS.register();
                 BarchedES.LOGGER.info("Successfully registered Spears to "+ compatMod.getModID() + ". Found material count: " + materialCount);
             }
+        }
+    }
+
+    public static void registerItemsToInvTab(CreativeModeTab.Output output, CompatMods compatMods) {
+        for (RegistrySupplier<Item> item : RegisterFactory.REGISTERED_SPEARS.get(compatMods.getCompatMod().getModID())) {
+            output.accept(item.get());
         }
     }
 }

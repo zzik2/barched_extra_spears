@@ -45,6 +45,9 @@ dependencies {
 
     // External Mods
     modImplementation("maven.modrinth:bronze:${project.bronze_neoforge_version}")
+
+    // Utility Mods
+    modRuntimeOnly("maven.modrinth:jei:${project.jei_neoforge_version}")
 }
 
 processResources {

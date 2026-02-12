@@ -9,7 +9,8 @@
   ],
   "mixins": [
     "VanillaItemTagsProviderMixin",
-    "compat.bronze.TabRegistryMixin"
+    "compat.bronze.TabRegistryMixin",
+    "compat.paradise_lost.ParadiseLostItemGroupsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
