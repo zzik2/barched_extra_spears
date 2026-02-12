@@ -32,7 +32,10 @@ Just install the mod, and spears will be registered whenever a supported mod is 
 When **Bronze** is installed, a bronze spear is automatically added!
 
 **Added Items:**
+##
 - 🗡️ Bronze Spear
+
+<img width="1920" height="1080" alt="bronze_spear" src="https://github.com/user-attachments/assets/2710402b-c5c7-4b62-acd5-3a7dda1ecc04" />
 
 </details>
 
@@ -46,9 +49,20 @@ When **Bronze** is installed, a bronze spear is automatically added!
 When **Paradise Lost** is installed, 3 spears is automatically added!
 
 **Added Items:**
+##
 - 🗡️ Olvite Spear
+
+<img width="1920" height="1080" alt="olvite_spear" src="https://github.com/user-attachments/assets/ea1f0171-905d-4a8d-a096-734617ccbf37" />
+
+##
 - 🗡️ Surtrum Spear
+
+<img width="1920" height="1080" alt="surtrum_spear" src="https://github.com/user-attachments/assets/17b1fa5a-15c9-46ca-a076-f75dd0cfcb8d" />
+
+##
 - 🗡️ Glazed Gold Spear
+
+<img width="1920" height="1080" alt="glazed_gold_spear" src="https://github.com/user-attachments/assets/18d20eee-e893-4102-9427-d6f1afbec360" />
 
 </details>
 
