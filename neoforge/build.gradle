@@ -40,11 +40,11 @@ dependencies {
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
 
     // Barched
-    modImplementation("maven.modrinth:barched:${project.barched_neoforge_version}")
+    modRuntimeOnly("maven.modrinth:barched:${project.barched_neoforge_version}")
     modApi("me.shedaniel.cloth:cloth-config-neoforge:$rootProject.cloth_config_version")
 
     // External Mods
-    modImplementation("maven.modrinth:bronze:${project.bronze_neoforge_version}")
+    modRuntimeOnly("maven.modrinth:bronze:${project.bronze_neoforge_version}")
 
     // Utility Mods
     modRuntimeOnly("maven.modrinth:jei:${project.jei_neoforge_version}")

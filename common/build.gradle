@@ -10,12 +10,11 @@ dependencies {
 
     modImplementation "dev.architectury:architectury:$rootProject.architectury_api_version"
 
-    modImplementation("maven.modrinth:barched:${project.barched_fabric_version}")
-    modApi("me.shedaniel.cloth:cloth-config:$rootProject.cloth_config_version") {
+    modCompileOnly("maven.modrinth:barched:${project.barched_fabric_version}")
+    modCompileOnlyApi("me.shedaniel.cloth:cloth-config:$rootProject.cloth_config_version") {
         exclude(group: "net.fabricmc.fabric-api")
     }
 
-    modImplementation("maven.modrinth:bronze:${project.bronze_fabric_version}")
-//    modImplementation("maven.modrinth:paradise-lost:${project.paradise_lost_fabric_version}")
-    modImplementation(files(rootProject.file("libs/paradise-lost-${project.paradise_lost_fabric_version}.jar"))) //TODO: delete
+    modCompileOnly("maven.modrinth:bronze:${project.bronze_fabric_version}")
+    compileOnly("maven.modrinth:paradise-lost:${project.paradise_lost_fabric_version}")
 }
