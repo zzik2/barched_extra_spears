@@ -69,9 +69,9 @@ public class RegisterFactory {
         }
     }
 
-    public static void registerItemsToInvTab(CreativeModeTab.Output output, CompatMods compatMods) {
-        BarchedES.LOGGER.info("Register Spears to CreativeMode Tab: " + compatMods.getCompatMod().getModID());
-        for (RegistrySupplier<Item> item : RegisterFactory.REGISTERED_SPEARS.get(compatMods.getCompatMod().getModID())) {
+    public static void registerItemsToInvTab(CreativeModeTab.Output output, String nameSpace) {
+        BarchedES.LOGGER.info("Register Spears to CreativeMode Tab: " + nameSpace);
+        for (RegistrySupplier<Item> item : RegisterFactory.REGISTERED_SPEARS.get(nameSpace)) {
             output.accept(item.get());
         }
     }

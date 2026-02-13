@@ -8,9 +8,7 @@
     "client.ModelBakeryMixin"
   ],
   "mixins": [
-    "VanillaItemTagsProviderMixin",
-    "compat.bronze.TabRegistryMixin",
-    "compat.paradise_lost.ParadiseLostItemGroupsMixin"
+    "VanillaItemTagsProviderMixin"
   ],
   "injectors": {
     "defaultRequire": 1
