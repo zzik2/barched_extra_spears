@@ -36,12 +36,15 @@ dependencies {
 
     // Barched
     modRuntimeOnly("maven.modrinth:barched:${project.barched_fabric_version}")
+
+    // Config
     modApi("me.shedaniel.cloth:cloth-config-fabric:$rootProject.cloth_config_version") {
         exclude(group: "net.fabricmc.fabric-api")
     }
 
     // External Mods
     modRuntimeOnly("maven.modrinth:bronze:${project.bronze_fabric_version}")
+    modRuntimeOnly("maven.modrinth:progression-reborn:${project.progression_reborn_fabric_version}")
 
     // Utility Mods
     modRuntimeOnly("maven.modrinth:jei:${project.jei_fabric_version}")

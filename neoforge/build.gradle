@@ -41,6 +41,8 @@ dependencies {
 
     // Barched
     modRuntimeOnly("maven.modrinth:barched:${project.barched_neoforge_version}")
+
+    // Config
     modApi("me.shedaniel.cloth:cloth-config-neoforge:$rootProject.cloth_config_version")
 
     // External Mods
